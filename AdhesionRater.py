@@ -8,23 +8,13 @@
 # Supervisor: Bryant Rodriguez
 # Sponsor: Dr. Dickens
 
-# Bryant's Description:
-# Classifies a single adhesion tape test image (after converting it to binary black and white) as per ASTM D3359.
-# Takes a single baseline image and converts it to black and white
-# The image should be an image that is known to be of class 5 (no flaking).
-# Then take a different image of unknown class and classify it.
-
-# Bryant's To-Do List:
-# Properly crop all input images (hopefully automatically) so that they are all the same size or aspect ratio.
-# Dylan's Note: We still need to add the functionality of automatically cropping photos to then classify
-
-# Develop code so that this works properly
-# Utilize a better method of making images black and white.
-# Alternatively, think of a better way to do all of this.
 
 # Import opencv and numpy
 import cv2
 import numpy as np
+import sys
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 
 # matplotlib for any graphs
 # import matplotlib.pyplot as plt
